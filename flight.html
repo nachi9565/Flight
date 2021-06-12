@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script>
+    function suggestAirports() {
+      document.getElementById("alternate-airports-section").style.display = "block"   
+    }
+    </script>
+    
+</head>
+<body>
+  <div class="container formField" style="margin-top: 20;">
+    <div>
+      <h2 style="text-align: center;">1. Trip Selection</h2>
+      <div class="input-group" style="margin: 50px 0;">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="departure-input">Departure</span>
+        </div>
+        <input type="text" class="form-control">
+        <div class="input-group-prepend" style="margin: 0 0 0 50px;">
+          <span class="input-group-text" id="arrival-input">Arrival</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group" style="margin: 50px 0;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Suggest alternate airports within(in miles) of flight path </span>
+          </div>
+          <input size="10%" type="text" class="form-control">
+        <div style="visibility: hidden;">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <button onclick="suggestAirports()" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <br>
+    <div id="alternate-airports-section" style="display: none;">
+      <h2 style="text-align: center;">2. Alternate Aiports Selection</h2>
+      <div class="input-group" style="margin: 50px 0;">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Alternate airports selected: </span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <br>
+      <h5>List of suggested airports:</h5>
+      <div class="input-group" style="margin-bottom: 20px;">
+        <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+      </div>
+      <button onclick="" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+  
+</body>
+</html>
